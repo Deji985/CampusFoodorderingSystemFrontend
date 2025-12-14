@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = 'https://campusfoodorderingsystembcknd.onrender.com';
 
 function fetchWithAuth(url, options = {}) {
     const token = localStorage.getItem('token');
