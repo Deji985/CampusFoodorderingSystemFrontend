@@ -1,4 +1,9 @@
-const API_BASE = 'https://campusfoodorderingsystembcknd.onrender.com/api';
+ 
+const API_BASE =
+  window.location.hostname === 'localhost'
+    ? 'http://localhost:3001/api'
+    : 'https://campusfoodorderingsystembcknd.onrender.com/api';
+
 
 function fetchWithAuth(url, options = {}) {
     const token = localStorage.getItem('token');
