@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <nav class="navbar">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Menu ▼</a>
+            <div class="dropdown-content">
+                <a href="menu.html">Browse Menu</a>
+                <a href="cart.html">Cart</a>
+            </div>
+        </li>
+        <li><a href="order-status.html">Orders</a></li>
+        <li class="dropdown">
+            <a href="#">Account ▼</a>
+            <div class="dropdown-content">
+                <a href="profile.html">Profile</a>
+                <a href="admin.html">Admin Panel</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <h1>Your Cart</h1>
+        <div class="card">
+            <div id="cart-items"></div>
+            <p><strong>Total: $<span id="cart-total">0.00</span></strong></p>
+            <button id="checkout-btn" class="btn btn-large">Checkout</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
